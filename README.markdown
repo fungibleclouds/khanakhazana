@@ -8,9 +8,17 @@ Get needed submodules
     git submodule init
     git submodule update
 
-Fireup vagrant VM
+Fire up vagrant VM
 
     vagrant up
+
+Fire up vagrant without provisioining (so as to run chef-solo manually if needed)
+
+    vagrant up --no-provision
+	vagrant ssh
+	sudo chef-solo -c /vagrant/solo.rb -j /vagrant/node.json
+
+Note: `/vagrant` maps back to the host location `khanakhazana` from where it picks up `solo.rb` and `node.json`	
 
 READINGS
 	
