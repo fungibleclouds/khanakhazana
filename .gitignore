@@ -1,2 +1,3 @@
 .vagrant
 chef-solo/chef-stacktrace.out
+/.idea
